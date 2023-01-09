@@ -13,8 +13,24 @@
 		991869D0296C1BE600C5FCED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991869CE296C1BE600C5FCED /* Main.storyboard */; };
 		991869D2296C1BE800C5FCED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 991869D1296C1BE800C5FCED /* Assets.xcassets */; };
 		991869D5296C1BE800C5FCED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991869D3296C1BE800C5FCED /* LaunchScreen.storyboard */; };
+		99DC4571296C333200DED935 /* FlutterWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DC4570296C333200DED935 /* FlutterWrapper.framework */; };
+		99DC4572296C333200DED935 /* FlutterWrapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99DC4570296C333200DED935 /* FlutterWrapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E3CAABE9B236085909CD63D7 /* Pods_FlutterExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7CF75B6E3A3FD3B3FC56C7 /* Pods_FlutterExample.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99DC4573296C333200DED935 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				99DC4572296C333200DED935 /* FlutterWrapper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		991869C5296C1BE600C5FCED /* FlutterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlutterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +42,7 @@
 		991869D4296C1BE800C5FCED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		991869D6296C1BE800C5FCED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		994A6BBFFC03E6CA9D9ED997 /* Pods-FlutterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterExample.debug.xcconfig"; path = "Target Support Files/Pods-FlutterExample/Pods-FlutterExample.debug.xcconfig"; sourceTree = "<group>"; };
+		99DC4570296C333200DED935 /* FlutterWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlutterWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7CF75B6E3A3FD3B3FC56C7 /* Pods_FlutterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlutterExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF127FD1118E84174C96B6B7 /* Pods-FlutterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterExample.release.xcconfig"; path = "Target Support Files/Pods-FlutterExample/Pods-FlutterExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,6 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3CAABE9B236085909CD63D7 /* Pods_FlutterExample.framework in Frameworks */,
+				99DC4571296C333200DED935 /* FlutterWrapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +63,7 @@
 		848D8FB4440E87176D5F78C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99DC4570296C333200DED935 /* FlutterWrapper.framework */,
 				DB7CF75B6E3A3FD3B3FC56C7 /* Pods_FlutterExample.framework */,
 			);
 			name = Frameworks;
@@ -88,7 +107,6 @@
 				994A6BBFFC03E6CA9D9ED997 /* Pods-FlutterExample.debug.xcconfig */,
 				DF127FD1118E84174C96B6B7 /* Pods-FlutterExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +121,7 @@
 				991869C1296C1BE600C5FCED /* Sources */,
 				991869C2296C1BE600C5FCED /* Frameworks */,
 				991869C3296C1BE600C5FCED /* Resources */,
+				99DC4573296C333200DED935 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

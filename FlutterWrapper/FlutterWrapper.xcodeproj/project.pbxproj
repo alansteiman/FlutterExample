@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5FC117E2579C4E212B6C320F /* Pods_FlutterWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7145267A3829B4717B9688D /* Pods_FlutterWrapper.framework */; };
 		991869EA296C1C2500C5FCED /* FlutterWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 991869E9296C1C2500C5FCED /* FlutterWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99DC456F296C32BF00DED935 /* WrapperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC456E296C32BF00DED935 /* WrapperViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		4D003F3B5788B06CD10BD0E9 /* Pods-FlutterWrapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterWrapper.release.xcconfig"; path = "Target Support Files/Pods-FlutterWrapper/Pods-FlutterWrapper.release.xcconfig"; sourceTree = "<group>"; };
 		991869E6296C1C2500C5FCED /* FlutterWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlutterWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		991869E9296C1C2500C5FCED /* FlutterWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlutterWrapper.h; sourceTree = "<group>"; };
+		99DC456E296C32BF00DED935 /* WrapperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperViewController.swift; sourceTree = "<group>"; };
 		A7145267A3829B4717B9688D /* Pods_FlutterWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlutterWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				991869E9296C1C2500C5FCED /* FlutterWrapper.h */,
+				99DC456E296C32BF00DED935 /* WrapperViewController.swift */,
 			);
 			path = FlutterWrapper;
 			sourceTree = "<group>";
@@ -121,6 +124,7 @@
 				TargetAttributes = {
 					991869E5296C1C2500C5FCED = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -202,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99DC456F296C32BF00DED935 /* WrapperViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B89EB8521287CA4FA059D2E /* Pods-FlutterWrapper.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -352,6 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -361,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D003F3B5788B06CD10BD0E9 /* Pods-FlutterWrapper.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
