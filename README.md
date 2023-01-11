@@ -17,3 +17,4 @@ cd FlutterExample
 pod install
 ```
 
+Video: https://drive.google.com/file/d/1ewIkyR4bIqV3OuTJz90nZZJ3E5vcNcSN/view?usp=sharing
