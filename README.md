@@ -1,5 +1,7 @@
 ## FlutterExample
 
+# This project uses Flutter 3
+
 Sample project to reproduce Apple Distribution error
 ```
 Invalid Bundle. The bundle at 'FlutterWrapper.framework' contains disallowed nested bundles
