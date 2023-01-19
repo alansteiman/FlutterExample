@@ -1,6 +1,6 @@
 ## FlutterExample
 
-# This project uses Flutter 3
+# This project uses Flutter 3.3.7
 
 Sample project to reproduce Apple Distribution error
 ```
